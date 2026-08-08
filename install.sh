@@ -26,7 +26,6 @@ mkdir -p "$SHARE_DIR/reports"
 if [ -f "$SCRIPT_DIR/reports/.gitkeep" ]; then
   cp "$SCRIPT_DIR/reports/.gitkeep" "$SHARE_DIR/reports/.gitkeep"
 fi
-cp "$SCRIPT_DIR/README.md" "$SCRIPT_DIR/LICENSE" "$SCRIPT_DIR/.gitignore" "$SHARE_DIR"/
 chmod +x "$SHARE_DIR/numtrace.sh" "$SHARE_DIR/install.sh" "$SHARE_DIR/uninstall.sh"
 
 mkdir -p "$HOME/.config/numtrace"
