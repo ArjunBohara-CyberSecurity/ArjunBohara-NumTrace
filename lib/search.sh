@@ -155,7 +155,7 @@ numtrace_search_number() {
   NUMTRACE_NEWS_COUNT=0
   NUMTRACE_DOCUMENT_COUNT=0
   NUMTRACE_BUSINESS_COUNT=0
-  load_provider_modules
+  numtrace_load_provider_modules
   queries=$(numtrace_search_queries_from_number "$normalized" "$national")
   providers=$(printf '%s' "$NUMTRACE_SEARCH_PROVIDERS" | tr ',' '\n')
   while IFS= read -r q || [ -n "$q" ]; do
